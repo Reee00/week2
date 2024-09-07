@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    
+    <style>
+        *, 
+    body {
+            margin: 0;
+        }
+    </style>
+        <link rel="stylesheet" href="assets/css/navbar-.css" />
+            <nav>
+            <ul
+              style="
+                padding: 20px;
+                background-color: gray;
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                align-items: center;
+              "
+            >
+                <img
+                  src="https://dumbways.id/assets/images/brandred.png"
+                  style="width: 50px; height: 25px; object-fit: contain"
+                />
+              <li>
+                <a href="index.html" style="text-decoration: none"> Home </a>
+              </li>
+              <li>
+                <a href="blog-new.html" style="text-decoration: none"> My Project </a>
+              </li>
+              <li>
+                <a href="CV-RENALDY-2.pdf" style="text-decoration: none"> My CV </a>
+              </li>
+              <li style="display: flex; width: 100%; justify-content: flex-end">
+                <a
+                  href="contact.html"
+                  style="
+                    background-color: orangered;
+                    padding: 20px;
+                    color: white;
+                    border-radius: 10px;
+                    text-decoration: none;
+                  "
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+        <link rel="stylesheet" href="assets/css/contact.css">
+    </head>
+    <body>
+        
+        <div class="form-container">
+    <h2>Kirim Pesan Bosku</h2>
+    <form  onsubmit="sendEmail(event)" style="display: flex; flex-direction: column; gap: 10px;">
+        <input id="name" placeholder="Enter your name" />
+        <input id="email" placeholder="Enter your email" />
+        <input id="phoneNumber" placeholder="Enter your phone number" />
+        <select id="subject">
+            <option value="">Select an Option</option>
+            <option value="Frontend Developer">Frontend Develeper</option>
+            <option value="Backend Developer">Backend Developer</option>
+            <option value="Fullstack Developer">Fullstack Developer</option>
+        </select>
+        <textarea 
+        id="message"
+        cols="30" rows="4" placeholder="Enter your message"></textarea>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+        
+    </form>
+        </div>
+    <script src="assets/js/contact.js"></script>
+
+</body>
+
+</html>
