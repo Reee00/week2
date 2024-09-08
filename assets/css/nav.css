@@ -32,3 +32,39 @@
     border-radius: 10px;
     text-decoration: none;
   }
+  .skill {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+  
+  .social-media {
+    margin-top: 80px;
+    font-size: 10;
+  }
+  
+  .social-media i {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    margin: 75px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  
+  .right {
+    margin-top: 0px;
+  }
+  
+  .skill {
+    flex-direction: column;
+  }
+  
