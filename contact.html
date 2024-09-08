@@ -1,34 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-        <link rel="stylesheet" href="assets/css/contact.css">
-    </head>
-    <body>
-        <div class="form-container">
-          <h2>KIRIM PESAN BOSKU</h2>
-          <form  onsubmit="sendEmail(event)">
-            <input id="name" placeholder="Enter your name" />
-            <input id="email" placeholder="Enter your email" />
-            <input id="phoneNumber" placeholder="Enter your phone number" />
-            <select id="subject">
-                          <option value="">Select Option</option>
-                      <option value="feedback">Frontend Developer</option>
-                      <option value="support">Backend Developer</option>
-                      <option value="general">Fullstack Developer</option>
-                  </select>
-                  <textarea 
-                  id="message"
-                  cols="30" rows="4" placeholder="Enter your message"></textarea>
-                  <input type="submit"value="Submit" />
-                  <input type="reset" value="Reset" />
-      
-              </form>
-            </div>
-            <script src="assets/js/contact.js"></script>
-      
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ContactMe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  </head>
+  <style>
+    .active {
+      color: orangered !important;
+      font-weight: bold;
+    }
 
+    .btn-primary {
+      background-color: orangered;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: red;
+    }
+  </style>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <img style="width: 60px; height: 60px; object-fit: contain" src="https://dumbways.id/assets/images/brandred.png" class="navbar-logo" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project-new.html">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="testimonial.html">Testimoni</a>
+          </li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary btn-lg enable" tabindex="-1" role="button" aria-disabled="true">Contact Me</a>
+      </div>
+    </div>
+  </nav>
+  <div class="d-flex justify-content-center">
+  <div class="w-35 p-2" style="background-color: #be3737;">
+  <form onsubmit="sendEmail(event)" style="display: flex; flex-direction: column; gap: 10px ">
+    <h1>Kirim Pesan</h1>
+    <input id="name" placeholder="Name" />
+    <input id="email" placeholder="Email" />
+    <input id="phoneNumber" placeholder="Phone Number" />
+    <select id="subject">
+      <option value="">Select an Option</option>
+      <option value="Frontend Developer">Frontend Developer</option>
+      <option value="Backend Developer">Backend Developer</option>
+      <option value="Fullstack Developer">Fullstack Developer</option>
+    </select>
+    <textarea id="message" cols="20" rows="4" placeholder="Message"></textarea>
+    <input type="submit" value="Submit" />
+    <input type="reset" value="Reset" />
+    </div>
+  </div>
+  
+  <script src="assets/js/contac.js"></script>
+  </form>
 </html>

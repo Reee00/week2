@@ -1,12 +1,12 @@
-*, 
-body {
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #423333;
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d9d9d9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,10 +14,9 @@ body {
 }
 
 .form-container {
-    background-color: grey;
-    padding: 20px;
-    margin: center;
-    border-radius: 0px;
+    background-color: #f0f0f0;
+    padding: 40px;
+    border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     width: 400px;
 }
